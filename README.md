@@ -1,7 +1,7 @@
 BBM 487 Software Enginnering Laboratory class group 5 
 
 
-These group has 3 members.Members and their roles:
+This group has 3 members.Members and their roles:
 
 
 Şehrinaz Koca:project manager and analyzer
@@ -14,17 +14,8 @@ Sergen Topçu:coder
 ACADEMIC INTEGRITY
 
 
-The Department of Computer Science believes that academic integrity is a core principle of education. According to the Center for Academic Integrity (www.academicintegrity.org), academic integrity begins as a commitment to five fundamental values: honesty, trust, fairness, respect and responsibility. These values begin with the individual and extend to others in the community of learning. In the classroom, they give rise to the following concrete but non-exhaustive rules for student behavior:
-Students are to do all assignments individually, with no collaboration or sharing of work, unless the instructor explicitly permits collaboration. If the instructor does not explicitly permit collaboration and one student shows or gives his/her work to another, then both students are considered to be cheating. Students may not use work provided by any person outside the class or by any external source such as the Web. Furthermore, students may not solicit other people to do assignments (in whole or in part) for them.
+Academic integrity is an important part of computer science.Academic integrity begins five principles:honesty, trust, fairness, respect and responsibility .In the direction of these principles, the following rules are emerging:
 
-When an instructor permits collaboration on an assignment, then collaboration is permitted only to the degree and in the respects that he/she specifies. Each assignment that is done collaboratively must state that it was done collaboratively and must list the collaborators.
-
-External sources, including published materials or material on the Web, may be used in assignments only to the extent permitted by the instructor. If such a source is used, the assignment must include an attribution to the source. Ideas, algorithms, text, code, and experimental results all require proper attribution.
-
-A student may not submit the same assignment to two different classes, whether in the same semester or in different semesters, without the explicit permission of both instructors.
-
-During an exam, students must not communicate in any way, nor use any materials or technology not explicitly permitted by the instructor. One student may not look at another student's test. If one student allows another student to look at his/her test, both students are considered to be cheating.
-
-A student may not attempt to gain possession of or look at an exam before the start of the exam.
-
-Disciplinary actions can vary in severity and can result in probation or termination from the program. See the CAS page on academic integrity for more information.
+-Copying is not allowed without the permission of the partners of the project.
+-If copied or cited, it should be indicated as a source.
+-The given labor should be respected.
