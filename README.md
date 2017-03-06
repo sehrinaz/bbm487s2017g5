@@ -2,6 +2,8 @@ BBM 487 Software Enginnering Laboratory class group 5
 
 
 These group has 3 members.Members and their roles:
+
+
 Şehrinaz Koca:project manager and analyzer
 Burcu İskender:designer and tester
 Sergen Topçu:coder
