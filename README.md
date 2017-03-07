@@ -3,15 +3,13 @@
 
 
 This group has 3 members.Members and their roles:
+<ul style="list-style-type:square">
+<li> Şehrinaz Koca: project manager and analyzer </li>
+<li> Burcu İskender: designer and tester </li>
+<li> Sergen Topçu: coder </li>
+</ul>
 
-  Şehrinaz Koca: project manager and analyzer
-
-  Burcu İskender: designer and tester
-
-  Sergen Topçu: coder
-
-
-<b>ACADEMIC INTEGRITY</b>
+<br><b>ACADEMIC INTEGRITY</b>
 
 
 The Department of Computer Science believes that academic integrity is a core principle of education. According to the Center for Academic Integrity (www.academicintegrity.org), academic integrity begins as a commitment to five fundamental values: honesty, trust, fairness, respect and responsibility. These values begin with the individual and extend to others in the community of learning. In the classroom, they give rise to the following concrete but non-exhaustive rules for student behavior:
