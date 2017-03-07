@@ -2,8 +2,7 @@
 <br> Spring 2017 - Group 5 </h1>
 <b>Library Book Loan System</b>
 <hr> 
-
-<br><p> This group has 3 members.Members and their roles:
+<p> This group has 3 members.Members and their roles:
 <ul style="list-style-type:square">
 <li> Şehrinaz Koca: project manager and analyzer </li>
 <li> Burcu İskender: designer and tester </li>
