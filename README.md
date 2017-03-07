@@ -1,5 +1,5 @@
-<h2>BBM 487 Software Engineering Laboratory </h2>
-Spring 2017 - Group 5 
+<h1>BBM 487 Software Engineering Laboratory
+<br> Spring 2017 - Group 5 </h1>
 
 
 This group has 3 members.Members and their roles:
