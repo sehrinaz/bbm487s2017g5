@@ -1,0 +1,52 @@
+body {
+	background-image: url("../images/back.jpg"); 
+	background-size: 100% 200%; 
+}
+.search input[type="text"] {
+    max-width: 400px;
+    width: 18%;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1em 2em;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    padding-left: 10px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.search input[type="submit"] {
+    height: 45px;
+    width: 100px;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    color: slategrey;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    margin-left: 0px;
+}
+input[type="submit"]:hover {color: pink;}
+input:focus {
+	background-color: pink;
+}
+.search {
+    height: 200px;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background-size: 100% 110%;
+}
+
+.search-header {
+    color: #fff;
+    text-align: center;
+    font-size: 150%;
+}
+#page {
+	position: relative;
+	text-align:center;
+}
+#top {
+	height:150px;
+}

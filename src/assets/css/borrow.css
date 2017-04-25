@@ -1,0 +1,41 @@
+#error {
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: -17%;
+	margin-top: 30px;
+	color: red;
+}
+#rules {
+	text-align: left;
+	margin-left: 6%;
+	font-weight: bold;
+	font-size: 25px;
+	color:#10253A;
+}
+#rules li {
+	color :black;
+}
+input[type="text"] {
+    max-width: 400px;
+    width: 18%;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1em 2em;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    outline: none;
+    padding-left: 10px;
+    margin-right: 0;
+    margin-left: 0;
+}
+input[type="submit"] {
+    height: 45px;
+    width: 100px;
+    background: #fff;
+    border: 1px solid #f2f2f2;
+    color: slategrey;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    margin-left: 0px;
+}

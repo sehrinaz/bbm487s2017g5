@@ -1,0 +1,53 @@
+#page {
+	position: relative;
+	text-align:center;
+	margin-left:20%;
+}
+#top {
+	height:150px;
+}
+.menu {
+	position: fixed;
+	left: -22px;
+	height: 110%;
+	width: 17%;
+	background-color: #34495E;
+	border: outset;
+	border-width: 10px;
+	border-color: #7d4126;
+	top: -20px;
+	border-right-width: 0
+}
+.active {
+	background-color: #10253A;
+	height: 9.5%;
+	padding-top: 30px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+}
+a {
+	color: white;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+a:link {text-decoration: none;}
+a:hover {color: pink;  }
+button {
+    border: none;
+    border-radius: 40px;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+.menu li {
+	color: white;
+	padding-left: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	border-width: 2px;
+	border-color: #4A6075;
+	border-bottom-style: inset;
+	padding-bottom: 10px;
+}

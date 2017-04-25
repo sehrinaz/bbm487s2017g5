@@ -1,0 +1,46 @@
+#top {
+	height:200px;
+}
+#page {
+	position: relative;
+	text-align:center;
+}
+#err {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-left: -25%;
+}
+button {
+    border: none;
+    border-radius: 40px;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul {
+  display: block;
+  margin: 20px 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  color: #999999;
+}
+li {
+  display: block;
+  margin: 10px 0 0 0;
+  text-align: left;
+}
+button {
+    border: none;
+    border-radius: 40px;
+    color: #f9f9f9;
+    padding: 10px 37px;
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+}
+
