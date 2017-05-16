@@ -1,23 +1,11 @@
 <?php
 include ('model/connection.php');
-function control_user(){
-	/*if user or librarian not logged in redirect index page */
+	
 	if(!isset($_SESSION['user']))
 		header("Location:index.php");
 	if($_SESSION["auth"] != 0)
 	header("Location:index.php");
-}	
-
-function control_barcode(){
-			 /*control the barcode number valid or not */
-			if (isset($_POST['barcode'])) {
-				if (isset($error))
-					echo '<div id="error" >'. $error . '</div>';
-				else {
-					echo '<div id ="rules" style="margin-left:31%;margin-top: 3%;"> Book return successfully! </div>';
-				}
-			}
-}
+	
 	if (isset($_POST['barcode'])) {
 		$loggenOnUser = $_SESSION["user"];
 		$sql1="SELECT id_user FROM user WHERE username='$loggenOnUser'";
@@ -39,13 +27,11 @@ function control_barcode(){
 				if (!isset($error))
 					$error = "You did not borrow this book!";
 			}
-			/*query update the available property of borrowed book*/
 			$sql2="UPDATE book SET available=1 WHERE barcode=$barcode";
 			$result2=mysqli_query($conn,$sql2);	
 			$delDate = date('Y/m/d', time());
 			$date=date_create($delDate);
 			$in=date_format($date,"Y-m-d");
-			/*query add a delivery date for the borrowed book */
 			$sql11 = "UPDATE borrow SET deliverydate='$in' WHERE  id_user=$user_id AND barcode=$barcode AND deliverydate IS NULL";
 			$r = mysqli_query($conn,$sql11);  
 		}
@@ -76,7 +62,7 @@ function control_barcode(){
 			<li><a href="waitbook.php" >Wait Book</a></li>
 			<li><a href="selfcheckout.php">Self Checkout </a></li>
             <li><a href="selfreturn.php" style="color:pink;">Self Return </a></li>
-			<li><a href="#">Pay Fine </a></li>
+			<li><a href="payfine.php">Pay Fine </a></li>
 			<li><a href="logout.php"> Logout </a></li>
         </ul>
 	</div>
@@ -93,8 +79,13 @@ function control_barcode(){
          </form>
 		  
 		 <?php 
-		 control_user();
-         control_barcode();
+			if (isset($_POST['barcode'])) {
+				if (isset($error))
+					echo '<div id="error" >'. $error . '</div>';
+				else {
+					echo '<div id ="rules" style="margin-left:31%;margin-top: 3%;"> Book return successfully! </div>';
+				}
+			}
 		?>
 	</div>
 </body>

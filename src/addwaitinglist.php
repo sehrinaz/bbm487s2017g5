@@ -1,13 +1,12 @@
 <?php
 	include('model/connection.php');
-function control_user(){
+
      if(!isset($_SESSION['user']))
 		header("Location:index.php"); 
 	 if($_SESSION["auth"] != 0)
 		header("Location:index.php");
-}
-
-     if (isset($_SESSION["user"])) {
+	
+     elseif (isset($_SESSION["user"])) {
 		$loggedOnUser = $_SESSION["user"];
         $sql1="SELECT id_user FROM user WHERE username='$loggedOnUser'";
         $result1=mysqli_query($conn,$sql1);
@@ -24,18 +23,16 @@ function control_user(){
 		
 		if(!isset($rowcontrol['available'])) 
 			$error = "Barcode or book name is invalid! There is no book this name with this barcode in the system.";
-		/*if book is avalible show the message to user*/
+		
 		else if ($rowcontrol['available'] == 1 ) 
 			$error = "Book is available ! You can borrow this book..";
 		
 		else {
-			/*query find the borrowed books from the borrow table in database*/
 			$check_book_owner_sql = "SELECT * FROM borrow where barcode=$barcode and deliverydate IS NULL and id_user = $id";
 			$result_owner = mysqli_query($conn, $check_book_owner_sql);
-			/*query find the waiting books knowledges from waitinglist table in database which match user_id and barcode*/
 			$check_already_added_sql = "SELECT * FROM waitinglist where barcode=$barcode and id_user = $id";
 			$result = mysqli_query($conn, $check_already_added_sql);
-			/*show the query result*/
+			
 			if (mysqli_num_rows($result_owner) > 0)
 				$error = "You can not wait this book. Because you borrowed!";
 			else if(mysqli_num_rows($result) > 0)

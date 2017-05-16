@@ -24,7 +24,7 @@ include('model/connection.php');
 					<li><a href="waitbook.php">Wait Book</a></li>
 					<li><a href="selfcheckout.php">Self Checkout </a></li>
 					<li><a href="selfreturn.php">Self Return </a></li>
-					<li><a href="#">Pay Fine </a></li>
+					<li><a href="payfine.php">Pay Fine </a></li>
 					<li><a href="logout.php"> Logout </a></li>
 				</ul>
 			</div>';
@@ -60,14 +60,12 @@ include('model/connection.php');
 		<?php
 			if (isset($_POST['bookname'])) {
 				$bookname = mysqli_escape_string ($conn,$_POST['bookname']);
-				/*query for the find all books in the database which the same as given bookname by user*/
 				$sql = "SELECT * FROM book WHERE book_name='$bookname' ";
 				$result1 = $conn->query($sql);
 				$i = 0;
 				if($result1->num_rows > 0){
 					
 					while($row = $result1->fetch_assoc()){  
-						/*print the result of query*/
 					   echo '<div class="promo scale" style="width:300px; height=220px; background-color:#D4DDDF;margin-left: 100px;margin-bottom: 100px;">
 							 <div class="deal">
 							 <span style="background-image: url(\'assets/images/book.png\'); color:black; height:60px;">'.$row['book_name'].'</span> <hr>

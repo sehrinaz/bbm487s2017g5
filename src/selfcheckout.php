@@ -1,11 +1,10 @@
 <?php
 include ('model/connection.php');
-	function control_user(){
+	
 	if(!isset($_SESSION['user']))
 		header("Location:index.php");
 	if($_SESSION["auth"] != 0)
 		header("Location:index.php");
-}
 ?>
 <!DOCTYPE html>
 <html> 
@@ -28,7 +27,7 @@ include ('model/connection.php');
 			<li><a href="waitbook.php">Wait Book</a></li>
 			<li><a href="selfcheckout.php" style="color:pink;">Self Checkout </a></li>
             <li><a href="selfreturn.php">Self Return </a></li>
-			<li><a href="#">Pay Fine </a></li>
+			<li><a href="payfine.php">Pay Fine </a></li>
 			<li><a href="logout.php"> Logout </a></li>
         </ul>
 	</div>
@@ -43,8 +42,5 @@ include ('model/connection.php');
 			<input type = "text" id="barcode" name = "barcode" style="width: 300px;" placeholder="Barcode" ><br/><br/>
 			<input type = "submit" style = "width:150px;" value = " SELF CHECKOUT"/>
         </form>
-        <?php
-         control_user();
-        ?>
 	</div>
 </body>

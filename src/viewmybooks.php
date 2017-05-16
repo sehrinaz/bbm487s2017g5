@@ -6,7 +6,19 @@ if (!isset($_SESSION["user"]))
 if($_SESSION["auth"] != 0)
 	header("Location:index.php");
 }
+function timeDiff($firstTime,$lastTime)
+{
 
+// convert to unix timestamps
+$firstTime=strtotime($firstTime);
+$lastTime=strtotime($lastTime);
+
+// perform subtraction to get the difference (in seconds) between times
+$timeDiff=$lastTime-$firstTime;
+
+// return the difference
+return $timeDiff;
+}
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +41,7 @@ if($_SESSION["auth"] != 0)
 			<li><a href="waitbook.php">Wait Book</a></li>
 			<li><a href="selfcheckout.php">Self Checkout </a></li>
             <li><a href="selfreturn.php">Self Return </a></li>
-			<li><a href="#">Pay Fine </a></li>
+			<li><a href="payfine.php">Pay Fine </a></li>
 			<li><a href="logout.php"> Logout </a></li>
         </ul>
 	</div>
@@ -39,7 +51,6 @@ if($_SESSION["auth"] != 0)
 			<img src= "assets/images/system.png" style = "height:100px; align:center;">	<br/>
 		</div>
 <?php
-    
         control_user();
 
 		$loggenOnUser = $_SESSION["user"];
@@ -80,7 +91,8 @@ if($_SESSION["auth"] != 0)
 			}
 			echo "</table></div>";	
 		}
-?>
+
+		?>
 			
 			 
 

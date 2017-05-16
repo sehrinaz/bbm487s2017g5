@@ -1,14 +1,12 @@
 <?php
 include('model/connection.php');
-function control_user(){
-/* If user or admin not logged in ,redirect the index page */
+
+/* If user or admin not logged in */
 if(isset($_SESSION['user']))
 	if($_SESSION["auth"] == 0)
 		header("Location:userlogin.php");
 	elseif($_SESSION["auth"] == 1)
 		header("Location:librarianlogin.php");
-}
-control_user();
 ?>
 <html>
 <head>

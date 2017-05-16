@@ -1,13 +1,10 @@
 <?php
 include ('model/connection.php');
-/*control the user or librarian login if they do not login go to the index page*/
-	function control_user_login(){
+	
 	if(!isset($_SESSION['user']))
 		header("Location:index.php");
 	if($_SESSION["auth"] != 0)
 	header("Location:index.php");
-}
-control_user_login();
 ?>
 
 <!DOCTYPE html>
@@ -40,9 +37,7 @@ control_user_login();
 		<div id = "top"> 
 			<img src= "assets/images/system.png" style = "height:100px; align:center;">	<br/>
 		</div>
-		<!--create a form and add text boxes and button for the operation
-		and orient the form a php page which do the operation with use
-		given user knowledge-->
+		
 		<form method = "post" action = "addwaitinglist.php" style="padding-right: 200px;" >
 		<br/>
 			<input type = "text" id="barcode" name = "barcode" style="width: 300px;" placeholder="Barcode" >
